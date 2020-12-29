@@ -34,6 +34,11 @@
         bottom: 0px;
         left: 0px;
         background-image: linear-gradient($darkBlue, transparent);
+        @include breakpoint-up(large)
+        {
+            display:none;
+        }
+   
     }
 
 
@@ -89,6 +94,11 @@
             color: $darkBlue;
             
         }
+
+        @include breakpoint-up(large)
+        {
+            display:none;
+        }
     }
 
     &__links {
@@ -124,15 +134,5 @@
         }
         }
       }  
-    }
-
-    &__cta {
-        font-size: $font-sm;
-        color: $white;
-        transition: opacity 300ms ease-in-out;
-        &:hover {
-            opacity: 0.75;
-        }
-    
     }
 }

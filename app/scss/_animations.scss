@@ -18,6 +18,10 @@
 }
 .fade-in{
     animation: fade-in 300ms ease-in-out forwards;
+    @include breakpoint-up(large)
+        {
+            animation: none;
+        }
 }
 
 
